@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kết quả học tập - Trường THCS Ba Vì</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; }
+    header, footer { background: #005baa; color: white; text-align: center; padding: 20px; }
+    nav { background: #003d7a; display: flex; justify-content: center; flex-wrap: wrap; padding: 10px; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    .container { max-width: 600px; margin: auto; padding: 40px 20px; }
+    form input, form button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 16px;
+    }
+    form button {
+      background: #005baa;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    form button:hover { background: #004080; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kết quả học tập</h1>
+  </header>
+  <nav>
+    <a href="index.html">Trang chủ</a>
+    <a href="gioithieu.html">Giới thiệu</a>
+    <a href="tintuc.html">Tin tức</a>
+    <a href="giaovien.html">Giáo viên</a>
+    <a href="lienhe.html">Liên hệ</a>
+  </nav>
+  <div class="container">
+    <p>Nhập mã học sinh để tra cứu kết quả học tập:</p>
+    <form onsubmit="event.preventDefault(); alert('Chức năng đang được cập nhật');">
+      <input type="text" placeholder="Mã học sinh" required>
+      <button type="submit">Tra cứu</button>
+    </form>
+  </div>
+  <footer>
+    <p>&copy; 2025 Trường THCS Ba Vì</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!-- lienhe.html -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liên hệ - Trường THCS Ba Trại</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Poppins', sans-serif; margin: 0; background: #f6f9fc; color: #333; }
+    header, footer {
+      background: linear-gradient(to right, #005baa, #0077cc);
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    nav {
+      background: #003d7a;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 12px;
+    }
+    nav a {
+      color: white;
+      margin: 6px 15px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #ffd966;
+    }
+    .container {
+      max-width: 700px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+    form {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    form button {
+      padding: 12px 24px;
+      background: #005baa;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    form button:hover {
+      background: #004080;
+    }
+    .info {
+      margin-top: 40px;
+      font-size: 1rem;
+    }
+    .info p {
+      margin-bottom: 10px;
+    }
+    footer {
+      background: #003d7a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Liên hệ với Trường THCS Ba Trại</h1>
+    <p>Chúng tôi sẵn sàng lắng nghe và phản hồi</p>
+  </header>
+  <nav>
+    <a href="index.html">Trang chủ</a>
+    <a href="gioithieu.html">Giới thiệu</a>
+    <a href="tintuc.html">Tin tức</a>
+    <a href="giaovien.html">Giáo viên</a>
+  </nav>
+  <div class="container">
+    <form onsubmit="event.preventDefault(); alert('Đã gửi thành công!');">
+      <label for="name">Họ và tên:</label>
+      <input type="text" id="name" name="name" placeholder="Nhập họ và tên" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Email của bạn" required>
+
+      <label for="message">Nội dung liên hệ:</label>
+      <textarea id="message" name="message" rows="5" placeholder="Nội dung bạn muốn gửi..." required></textarea>
+
+      <button type="submit">Gửi liên hệ</button>
+    </form>
+
+    <div class="info">
+      <p><strong>Địa chỉ:</strong> Thôn 5, xã Ba Trại, huyện Ba Vì, Hà Nội</p>
+      <p><strong>Điện thoại:</strong> 0862622471</p>
+      <p><strong>Email:</strong> dcc.id.vn</p>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2025 Trường THCS Ba Trại</p>
+  </footer>
+</body>
+</html>

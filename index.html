@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang chủ - Trường THCS Ba Vì</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f7f9fc;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #005baa, #0077cc);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    nav {
+      background: #003d7a;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 12px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 6px 15px;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffd966;
+    }
+    .hero {
+      background: url('https://via.placeholder.com/1200x400?text=THCS+Ba+Vi') center/cover no-repeat;
+      height: 350px;
+    }
+    .container {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .feature {
+      background: white;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      transition: transform 0.3s ease;
+    }
+    .feature:hover {
+      transform: translateY(-5px);
+    }
+    .feature h3 {
+      color: #005baa;
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+    .feature p {
+      font-size: 0.95rem;
+      margin-bottom: 12px;
+    }
+    .feature a {
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: 600;
+    }
+    .feature a:hover {
+      text-decoration: underline;
+    }
+    .about {
+      background: white;
+      margin-top: 60px;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    }
+    .about h2 {
+      color: #005baa;
+      margin-bottom: 20px;
+    }
+    .about ul {
+      margin-left: 20px;
+    }
+    footer {
+      background: #003d7a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Trường THCS Ba Trại</h1>
+    <p>Đổi mới - Sáng tạo - Phát triển toàn diện</p>
+  </header>
+  <nav>
+    <a href="index.html">Trang chủ</a>
+    <a href="gioithieu.html">Giới thiệu</a>
+    <a href="tintuc.html">Tin tức</a>
+    <a href="giaovien.html">Giáo viên</a>
+    <a href="thoikhoabieu.html">Thời khoá biểu</a>
+    <a href="ketquahoctap.html">Kết quả học tập</a>
+  </nav>
+  <div class="hero"></div>
+  <div class="container">
+    <h2 style="text-align:center; color:#005baa; font-size: 1.6rem;">Các trang chính của trường</h2>
+    <div class="grid">
+      <div class="feature">
+        <h3>Thời khoá biểu</h3>
+        <p>Lịch học và các điều chỉnh theo tuần.</p>
+        <a href="thoikhoabieu.html">Xem chi tiết →</a>
+      </div>
+      <div class="feature">
+        <h3>Kết quả học tập</h3>
+        <p>Tra cứu kết quả học kỳ trực tuyến theo mã học sinh.</p>
+        <a href="ketquahoctap.html">Xem điểm →</a>
+      </div>
+    </div>
+
+    <div class="about">
+      <h2>Giới thiệu về Trường THCS Ba Trại</h2>
+      <p>Trường THCS Ba Trại được thành lập vào tháng 9 năm 1963 tại xã Ba Trại, huyện Ba Vì, Hà Nội. Trải qua hơn 60 năm phát triển, nhà trường đã khẳng định được vị thế với chất lượng giáo dục ngày càng nâng cao.</p>
+      <ul>
+        <li><strong>Địa chỉ:</strong> Thôn 5, xã Ba Trại, huyện Ba Vì, TP Hà Nội</li>
+        <li><strong>Email:</strong> dcc.id.vn</li>
+        <li><strong>Website:</strong> <a href="http://dcc.id.vn" target="_blank">dcc.id.vn</a></li>
+        <li><strong>Hiệu trưởng:</strong> Thầy Nguyễn Ngọc Đại</li>
+        <li><strong>Cơ sở vật chất:</strong> 15.000 m², 29 lớp học, trang thiết bị hiện đại</li>
+        <li><strong>Thành tích:</strong> Trường chuẩn quốc gia, nhiều giải thưởng cấp huyện và thành phố</li>
+      </ul>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2025 Trường THCS Ba Vì. Thiết kế bởi phòng CNTT nhà trường.</p>
+  </footer>
+</body>
+</html>
